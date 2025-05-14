@@ -14,7 +14,7 @@ Or open Terminal via Spotlight or Launchpad.
 In your terminal, navigate to the backend folder:
 cd backend
 
-Install all necessary dependencies:
+Install all necessary dependencies(these have already been installed):
 npm install
 
 Start the backend server:
