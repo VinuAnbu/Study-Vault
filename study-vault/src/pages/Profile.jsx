@@ -326,7 +326,7 @@ const Profile = () => {
             {/* Liked Resources Section */}
             <div>
               <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                <FaHeart className="text-red-500 mr-2" /> Liked Resources
+                <FaHeart className="text-red-500 mr-2" /> Favourite Resources
               </h2>
               {profile?.liked?.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -348,11 +348,7 @@ const Profile = () => {
                       <h3 className="text-lg font-semibold text-gray-900">{resource.title}</h3>
                       <p className="text-sm text-gray-600 mt-1">{resource.comment}</p>
 
-                      {resource.author && (
-                        <p className="text-xs text-gray-500 mt-2">
-                          <span className="font-medium">Author:</span> {resource.author.username}
-                        </p>
-                      )}
+
 
                       <a
                         href={resource.fileUrl}
@@ -366,7 +362,7 @@ const Profile = () => {
                 </div>
               ) : (
                 <p className="text-gray-500 text-center p-4 bg-gray-50 rounded-lg">
-                  No liked resources yet. Browse resources and star the ones you like!
+                  No favourited resources yet. Browse resources and star the ones you like!
                 </p>
               )}
             </div>

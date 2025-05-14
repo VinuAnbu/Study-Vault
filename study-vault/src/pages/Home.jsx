@@ -137,11 +137,7 @@ const Home = () => {
                     <h3 className="text-lg font-semibold text-gray-900">{resource.title}</h3>
                     <p className="text-sm text-gray-600 mt-1">{resource.comment}</p>
 
-                    {resource.author && (
-                      <p className="text-xs text-gray-500 mt-2">
-                        <span className="font-medium">Author:</span> {resource.author.username}
-                      </p>
-                    )}
+                    
 
                     <a
                       href={resource.fileUrl}
